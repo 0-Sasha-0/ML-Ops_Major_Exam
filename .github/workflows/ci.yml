@@ -6,7 +6,7 @@ on:
 
 jobs:
   test-suite:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -25,7 +25,7 @@ jobs:
         run: pytest tests/
 
   train-and-quantize:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     needs: test-suite
     steps:
       - name: Checkout code
@@ -46,7 +46,7 @@ jobs:
           python src/quantize.py
 
   build-and-test-container:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     needs: train-and-quantize
     steps:
       - name: Checkout code
