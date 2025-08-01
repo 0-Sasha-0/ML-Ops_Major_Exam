@@ -1,2 +1,2 @@
-# MLOps Linear Regression Project
+# MLOps Major Exam
 # dummy
