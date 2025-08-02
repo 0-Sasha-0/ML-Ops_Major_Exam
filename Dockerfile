@@ -12,3 +12,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Run prediction script
 CMD ["python", "src/predict.py"]
+
