@@ -1,19 +1,17 @@
 import numpy as np
+import pandas as pd  # <-- ADD THIS LINE to load CSVs
 import joblib
 from sklearn.metrics import r2_score, mean_squared_error
-from sklearn.datasets import fetch_california_housing
-from sklearn.model_selection import train_test_split
 import warnings
 
 warnings.filterwarnings("ignore")
 
 # Load the model
-model = joblib.load("../artifacts/linear_model.joblib")
+model = joblib.load("artifacts/linear_model.joblib")
 
-# Load dataset
-data = fetch_california_housing()
-X, y = data.data, data.target
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+# Load test data
+X_test = pd.read_csv("artifacts/X_test.csv")
+y_test = pd.read_csv("artifacts/y_test.csv")
 
 # Make predictions
 predictions = model.predict(X_test)
