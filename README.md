@@ -4,17 +4,18 @@
 This project implements a complete MLOps workflow for predicting housing prices using the California Housing dataset. The goal was to build a clean and modular machine learning pipeline using Linear Regression and apply MLOps best practices.
 
 ## 📁 Project Structure
-california-housing-mlops/
+```
 california-housing-mlops/
 ├── src/
-│ ├── train.py # Script to train and save the model
-│ ├── predict.py # Script to load model and make predictions
-│ └── artifacts/ # Contains saved model and test data
-│ ├── linear_model.joblib
-│ ├── X_test.csv
-│ └── y_test.csv
+│   ├── train.py          # Script to train and save the model
+│   ├── predict.py        # Script to load model and make predictions
+│   └── artifacts/        # Contains saved model and test data
+│       ├── linear_model.joblib
+│       ├── X_test.csv
+│       └── y_test.csv
 ├── requirements.txt
 └── README.md
+```
 
 
 ## 🔧 Tools and Libraries
