@@ -5,19 +5,16 @@ This project implements a complete MLOps workflow for predicting housing prices 
 
 ## 📁 Project Structure
 california-housing-mlops/
-│
+california-housing-mlops/
 ├── src/
 │ ├── train.py # Script to train and save the model
 │ ├── predict.py # Script to load model and make predictions
 │ └── artifacts/ # Contains saved model and test data
-│
-├── artifacts/ # Model and test data
 │ ├── linear_model.joblib
 │ ├── X_test.csv
 │ └── y_test.csv
-│
 ├── requirements.txt
-├── README.md
+└── README.md
 
 
 ## 🔧 Tools and Libraries
