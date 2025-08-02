@@ -32,3 +32,9 @@ print(f"Mean Squared Error: {mse:.4f}")
 # Save model
 os.makedirs("artifacts", exist_ok=True)
 joblib.dump(model, "artifacts/linear_model.joblib")
+
+
+# Save X_test and y_test
+pd.DataFrame(X_test).to_csv("../artifacts/X_test.csv", index=False)
+pd.DataFrame(y_test).to_csv("../artifacts/y_test.csv", index=False)
+
