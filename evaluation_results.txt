@@ -1,0 +1,3 @@
+R² Score: 0.5758
+Mean Squared Error: 0.5559
+Sample Predictions: 0.7191, 1.764, 2.7097, 2.8389, 2.6047
